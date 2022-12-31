@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="projetos">
+        <div class="closeWindow">
+            <img src="images/fechar.png">
+        </div>
+        <div class="windowContent">
+            <div class="projectLinks">
+                <div style="margin-left: 4vw;margin-top: 2vh; width: 100%;display: flex; position: absolute;">
+                    <h2>Teste você mesmo(a)<br>	&nbsp;	&nbsp;	&nbsp;cada um deles!</h2>
+                </div>
+                <div style="position: absolute; margin-top: 28%;">
+                <ul>
+                    <li class="linkPrjeto" id="li1">
+                        <a data-link="quiz" data-text="&nbsp;Quiz">&nbsp;Quiz&nbsp;</a>
+                    </li>
+                    <li class="linkProjeto">
+                        <a data-link="urna" data-text="&nbsp;Urna">&nbsp;Urna&nbsp;</a>
+                    </li>
+                    <li class="linkProjeto">
+                        <a data-link="velha" data-text="&nbsp;Velha">&nbsp;Velha&nbsp;</a>
+                    </li>
+                    <li class="linkProjeto">
+                        <a data-link="clima" data-text="&nbsp;Clima">&nbsp;Clima&nbsp;</a>
+                    </li>
+                    <li class="linkProjeto">
+                        <a data-link="slider" data-text="&nbsp;Slider">&nbsp;Slider&nbsp;</a>
+                    </li>
+                    <li class="linkProjeto">
+                        <a data-link="bateria" data-text="&nbsp;Bateria">&nbsp;Bateria&nbsp;</a>
+                    </li>
+                    <li class="linkProjeto">
+                        <a data-link="relogio" data-text="&nbsp;Relógio">&nbsp;Relógio&nbsp;</a>
+                    </li>
+                    <li class="linkProjeto">
+                        <a data-link="pizzaria"  data-text="&nbsp;Pizzaria">&nbsp;Pizzaria&nbsp;</a>
+                    </li>
+                    <li class="linkProjeto">
+                        <a data-link="movimento" data-text="&nbsp;Movimento">&nbsp;Movimento&nbsp;</a>
+                    </li>
+                    <li class="linkProjeto">
+                        <a data-link="form" data-text="&nbsp;Formulário">&nbsp;Formulário&nbsp;</a>
+                    </li>
+                    <li class="linkProjeto">
+                        <a data-link="desenhando" data-text="&nbsp;Desenhando">&nbsp;Desenhando&nbsp;</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header" >
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="header--options" style="transition: 3s;">
+                <button class="option" id="optionButton">
+                    <a id="linkA">Home</a>
+                </button>
+                <button class="option" onclick="openProjectsWindow()" id="optionButton">
+                    <a id="linkB">Projetos</a>
+                </button>
+                <button class="option" id="optionButton">
+                    <a id="linkC">Ferramentas</a>
+                </button>
+                <button class="option" id="optionButton">
+                    <a id="linkD">Contato</a>
+                </button>
+            </div>
+        </div>
+        <div class="menu">
+            <button onclick="cadastrar()">Cadastrar</button>
+            <button class="signIn" onclick="entrar()">Entrar</button>
+        </div>
+    </div>
+    <div class="cadastro" id="crud">
+        <div class="sair">
+            <img src="images/sairCrud.png">
+        </div>
+        <div class="formularioCrud">
+            <h1 id="textoForm"></h1>
+            <form class="form" autocomplete='off'>
+                <div class="input-box">
+                    <label id="nome" for="firstname"></label>
+                    <input type="text" id="firstname" name="firstname" placeholder="" required>
+                </div>
+                <div class="input-box">
+                    <label id="sobrenome" for="lastname"></label>
+                    <input type="text" id="lastname" name="lastname" placeholder="" required>
+                </div>
+                <div class="input-box" id="caixaCelular">
+                    <label id="celular" for="number"></label>
+                    <input type="tel" id="number" name="number" placeholder="" required>
+                </div>
+                <div class="input-box" id="input2">
+                    <label id="email" for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="" required>
+                </div>
+                <div class="input-box" id="input3">
+                    <label id="senha" for="password"></label>
+                    <input type="password" id="password" name="password" placeholder="" required>
+                </div>
+                <div class="input-box" id="input4">
+                    <label id="senhaC" for="Confirmpassword"></label>
+                    <input type="password" id="Confirmpassword" name="Confirmpassword" placeholder="" required>
+                </div>
+            </form>
+        </div>
+        <div class="finish">
+            <img src="images/finish.png">
+        </div>
+    </div>
+    <div id="screen">
+        <div class="linha">
+            <div class="texto--screen">
+                <h2>ENTUSIASTA DA TECNOLOGIA!</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-skew"></div>
+
+    <div class="restante">
+        <h2>MINHAS FERRAMENTAS</h2>
+    </div>
+
+    <div class="restante">
+        <h2>CONTATOS</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
