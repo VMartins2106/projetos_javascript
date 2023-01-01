@@ -29,6 +29,7 @@ function openProject(event){
     event.target.style.cursor = 'progress'
     setTimeout(() => {
         event.target.style.cursor = 'pointer'
+        window.open(`E:/Javascript/PROJETO-FINAL/projetos/${nome}/${nome}.html`,"_blank")
         window.open(`http://127.0.0.1:5500/projetos/${nome}/${nome}.html`, "_blank");
     }, 1500);
     cursorPointer(event)
