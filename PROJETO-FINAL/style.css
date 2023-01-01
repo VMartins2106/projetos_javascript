@@ -1,3 +1,4 @@
+@import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
 *{
     box-sizing: border-box;
 }
@@ -442,8 +443,94 @@ ul li a:hover::before{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    color: #252c2d;
 }
 .restante h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #252c2d;
+}
+.contatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #252c2d;
+}
+.contatos h2{
+    font-size: 2.5rem;
+    color: #252c2d;
+}
+.social{
+    width: 90%;
+    height: 40vh;
+    margin: auto;
+    font-size: 0;
+    text-align: center; 
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.social .btn{
+    display: inline-block;
+    background-color: #ddd;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    margin: 0 10px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 28%;
+    box-shadow: 0 5px 15px -5px rgb(0, 0, 0.1);
+    opacity: 0.99;
+}
+.social .btn,
+.social .btn:before,
+.social .btn .fa{
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social .btn:before{
+    top: 90%;
+    left: 110%;
+}
+.social .btn .fa{
+    transform: scale(0.8);
+}
+.social .btn.github:before{
+    background-color: #171515;
+}
+.social .btn.github .fa{
+    color: #171515 ;
+}
+.social .btn.linkedin:before{
+    background-color: #0e76a8  ;
+}
+.social .btn.linkedin .fa{
+    color: #0e76a8 ;
+}
+.social .btn:focus:before,
+.social .btn:hover:before{
+    top: -10%;
+    left: -10%;
+}
+.social .btn:focus .fa,
+.social .btn:hover .fa{
+    color: #ddd;
+    transform: scale(1);
+}
+.social .btn:before{
+    content: '';
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    transform: rotate(45deg);
+}
+.social .btn .fa{
+    font-size: 38px;
+    vertical-align: middle;
 }

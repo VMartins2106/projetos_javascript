@@ -111,8 +111,16 @@ function salvarDados(){
         var email = document.querySelector('#email').value        
         var senha = document.querySelector('#password').value        
         var senhaConfirmada = document.querySelector('#Confirmpassword').value
+        if(senha === senhaConfirmada){
+            alert('Usuário cadastrado')
+            
+        } else{
+            alert('As senhas estão diferentes !')
+        }
+
     } else if(document.getElementById('crud').classList.contains('entrar')){
         var email = document.querySelector('#firstname').value
         var senha = document.querySelector('#lastname').value
+        alert('Usuário logado')
     }
 }

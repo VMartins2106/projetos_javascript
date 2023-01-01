@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto javascript</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,39 +19,39 @@
                     <h2>Teste você mesmo(a)<br>	&nbsp;	&nbsp;	&nbsp;cada um deles!</h2>
                 </div>
                 <div style="position: absolute; margin-top: 28%;">
-                <ul>
+                <ul >
                     <li class="linkPrjeto" id="li1">
-                        <a data-link="quiz" data-text="&nbsp;Quiz">&nbsp;Quiz&nbsp;</a>
+                        <a data-link="quiz" style="text-decoration: none;" data-text="&nbsp;Quiz">&nbsp;Quiz&nbsp;</a>
                     </li>
                     <li class="linkProjeto">
-                        <a data-link="urna" data-text="&nbsp;Urna">&nbsp;Urna&nbsp;</a>
+                        <a data-link="urna" style="text-decoration: none;" data-text="&nbsp;Urna">&nbsp;Urna&nbsp;</a>
                     </li>
                     <li class="linkProjeto">
-                        <a data-link="velha" data-text="&nbsp;Velha">&nbsp;Velha&nbsp;</a>
+                        <a data-link="velha" style="text-decoration: none;" data-text="&nbsp;Velha">&nbsp;Velha&nbsp;</a>
                     </li>
                     <li class="linkProjeto">
-                        <a data-link="clima" data-text="&nbsp;Clima">&nbsp;Clima&nbsp;</a>
+                        <a data-link="clima" style="text-decoration: none;" data-text="&nbsp;Clima">&nbsp;Clima&nbsp;</a>
                     </li>
                     <li class="linkProjeto">
-                        <a data-link="slider" data-text="&nbsp;Slider">&nbsp;Slider&nbsp;</a>
+                        <a data-link="slider" style="text-decoration: none;" data-text="&nbsp;Slider">&nbsp;Slider&nbsp;</a>
                     </li>
                     <li class="linkProjeto">
-                        <a data-link="bateria" data-text="&nbsp;Bateria">&nbsp;Bateria&nbsp;</a>
+                        <a data-link="bateria" style="text-decoration: none;" data-text="&nbsp;Bateria">&nbsp;Bateria&nbsp;</a>
                     </li>
                     <li class="linkProjeto">
-                        <a data-link="relogio" data-text="&nbsp;Relógio">&nbsp;Relógio&nbsp;</a>
+                        <a data-link="relogio" style="text-decoration: none;" data-text="&nbsp;Relógio">&nbsp;Relógio&nbsp;</a>
                     </li>
                     <li class="linkProjeto">
-                        <a data-link="pizzaria"  data-text="&nbsp;Pizzaria">&nbsp;Pizzaria&nbsp;</a>
+                        <a data-link="pizzaria" style="text-decoration: none;"  data-text="&nbsp;Pizzaria">&nbsp;Pizzaria&nbsp;</a>
                     </li>
                     <li class="linkProjeto">
-                        <a data-link="movimento" data-text="&nbsp;Movimento">&nbsp;Movimento&nbsp;</a>
+                        <a data-link="movimento" style="text-decoration: none;" data-text="&nbsp;Movimento">&nbsp;Movimento&nbsp;</a>
                     </li>
                     <li class="linkProjeto">
-                        <a data-link="form" data-text="&nbsp;Formulário">&nbsp;Formulário&nbsp;</a>
+                        <a data-link="form" style="text-decoration: none;" data-text="&nbsp;Formulário">&nbsp;Formulário&nbsp;</a>
                     </li>
                     <li class="linkProjeto">
-                        <a data-link="desenhando" data-text="&nbsp;Desenhando">&nbsp;Desenhando&nbsp;</a>
+                        <a data-link="desenhando" style="text-decoration: none;" data-text="&nbsp;Desenhando">&nbsp;Desenhando&nbsp;</a>
                     </li>
                 </ul>
                 </div>
@@ -62,16 +63,16 @@
             <a href="index.html"><img src="images/logo.png"></a>
             <div class="header--options" style="transition: 3s;">
                 <button class="option" id="optionButton">
-                    <a id="linkA">Home</a>
+                    <a id="linkA" style="text-decoration: none;">Home</a>
                 </button>
                 <button class="option" onclick="openProjectsWindow()" id="optionButton">
-                    <a id="linkB">Projetos</a>
+                    <a id="linkB" style="text-decoration: none;">Projetos</a>
                 </button>
                 <button class="option" id="optionButton">
-                    <a id="linkC">Ferramentas</a>
+                    <a id="linkC" href="#ferramentas" style="text-decoration: none; color: white;">Ferramentas</a>
                 </button>
                 <button class="option" id="optionButton">
-                    <a id="linkD">Contato</a>
+                    <a id="linkD" href="#contatos" style="text-decoration: none; color: white;">Contato</a>
                 </button>
             </div>
         </div>
@@ -127,14 +128,30 @@
 
     <div class="about-skew"></div>
 
-    <div class="restante">
-        <h2>MINHAS FERRAMENTAS</h2>
+    <div class="restante" id="ferramentas">
+        <h2>...MINHAS FERRAMENTAS</h2>
+        <br>
+        <h3 style="letter-spacing: 2px;">
+            Este site foi inteiramente desenvolvido através de códigos HTML, CSS e JavaScript, pelo
+            Visual Studio Code! <br> O site foi criado com o intuito de treinar e praticar ainda mais
+            ferramentas e linguagens de desenvolvido web, <br> e todo tipo de execução, desde a lateralidade
+            do menu de projetos quanto a parte de cadastrar e entrar, além <br> de as alterações na tela do
+            usuário, conforme ele a modifica, foram realizadas através da linguagem Javascript<br><br><br>
+        </h3>
     </div>
 
-    <div class="restante">
+    <div class="contatos" id="contatos">
         <h2>CONTATOS</h2>
+        <div class="social">
+            <a href="https://github.com/VMartins2106" target="_blank" class="btn github" style="margin-top: 6%;">
+                <i class="fa fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/devvictor/" target="_blank" class="btn linkedin">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script>    
 </body>
 </html>
